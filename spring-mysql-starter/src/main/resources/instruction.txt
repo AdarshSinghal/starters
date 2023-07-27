@@ -1,0 +1,17 @@
+##Precondition:-
+#In application.properties, database url, username, password is correct.
+
+CREATE DATABASE `practice`;
+
+USE `practice`;
+
+CREATE TABLE `user`
+	(
+		`id` int unsigned not null auto_increment,
+		`name` varchar(63) not null,
+		`email` varchar(63) not null,
+		primary key(`id`),
+		unique key(`email`)
+	);
+	
+INSERT INTO user (name, email) VALUES ('Adarsh', 'adarsh@gmail.com')
